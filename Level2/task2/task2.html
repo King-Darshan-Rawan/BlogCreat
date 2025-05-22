@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">MySite</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="navMenu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Responsive Webpage</h1>
+  </header>
+
+  <main class="content">
+    <div>
+      <h2>Section 1</h2>
+      <p>This section adjusts based on screen size.</p>
+    </div>
+    <div>
+      <h2>Section 2</h2>
+      <p>On smaller screens, these sections stack vertically.</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
