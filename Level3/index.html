@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSS Image Gallery + Auto Slideshow</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Thumbnail Gallery (Click thumbnails to enlarge)</h2>
+<div class="gallery">
+  <input type="radio" name="gallery" id="img1" checked />
+  <input type="radio" name="gallery" id="img2" />
+  <input type="radio" name="gallery" id="img3" />
+  <input type="radio" name="gallery" id="img4" />
+
+  <div class="large-image">
+    <img src="./../download.jpg" alt="Mountain" />
+    <img src="./../istockphoto-2152515127-612x612.webp" alt="Beach" />
+    <img src="./../morskie-oko-tatry_1204-510.avif" alt="Forest" />
+    <img src="./../photo-1511884642898-4c92249e20b6.avif" alt="Bridge" />
+  </div>
+
+  <div class="thumbnails">
+    <label for="img1"><img src="./../download.jpg" alt="Mountain thumbnail" /></label>
+    <label for="img2"><img src="./../istockphoto-2152515127-612x612.webp" alt="Beach thumbnail" /></label>
+    <label for="img3"><img src="./../morskie-oko-tatry_1204-510.avif" alt="Forest thumbnail" /></label>
+    <label for="img4"><img src="./../photo-1511884642898-4c92249e20b6.avif" alt="Bridge thumbnail" /></label>
+  </div>
+</div>
+
+<h2>Automatic CSS Slideshow (No click needed)</h2>
+<div class="slideshow" aria-label="Automatic Image Slideshow">
+  <img src="./../download.jpg" alt="Cityscape" />
+  <img src="./../istockphoto-2152515127-612x612.webp" alt="Sunset" />
+  <img src="./../morskie-oko-tatry_1204-510.avif" alt="Mountains" />
+  <img src="./../premium_photo-1676496046182-356a6a0ed002.avif" alt="River" />
+  <div class="slideshow-caption">Awesome nature views</div>
+</div>
+
+</body>
+</html>
